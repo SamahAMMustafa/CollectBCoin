@@ -17,10 +17,10 @@ public class SpawnManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
         	int collectIndex = Random.Range(0, collectPrefabs.Length);
-        	Vector3 spawnPos = new Vector3(Random.Range(-7, 7), 0, 7);
+        	Vector3 spawnPos = new Vector3(Random.Range(-5, 5), 0, 5);
 
         	// spawn objects from the distance -7 and 7 on the screen. Also in different locations.
-        	Instantiate(collectPrefabs[collectIndex], new Vector3(Random.Range(-7, 7), 0, 7), collectPrefabs[collectIndex].transform.rotation);
+        	Instantiate(collectPrefabs[collectIndex], new Vector3(Random.Range(-5, 5), 0, 5), collectPrefabs[collectIndex].transform.rotation);
         }
     }
 }
